@@ -1,0 +1,44 @@
+name: tabla_periodica
+description: App para facilitar el uso de la tabla periódica
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_svg: ^1.1.5
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path_ios: "app_icon/app-icon-ios.png"
+  image_path: "app_icon/app-icon.png"
+  web:
+    generate: true
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    icon_size: 48
+
+flutter:
+  assets:
+    - assets/images/
+
+  uses-material-design: true
